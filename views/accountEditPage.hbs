@@ -1,0 +1,35 @@
+<div class="main__gradient"></div>
+<div class="account_info">
+    <div class="account_info__user_edit">
+        <h2>User Information</h2>
+        <form class="editUserForm">
+<!--            <p>User ID: {{id}}</p>-->
+            <label for="id">User ID:</label><br>
+            <input type="text" id="id" name="id" value="{{id}}" readonly class="input-field"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="{{email}}" readonly class="input-field"><br>
+<!--            <p>Email: {{email}}</p> &lt;!&ndash; Поле email обычно не изменяется &ndash;&gt;-->
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" value="{{username}}" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" value="{{password}}" required><br>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" value="{{phoneNumber}}" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" value="{{address}}" required><br><br>
+            <input type="submit" value="Save Changes" class="saveButton">
+            <input type="button" value="Cancel" class="cancelButton" onclick="window.location.href = '../{{id}}'">
+        </form>
+    </div>
+    <div class="account_info__orders">
+        <h2>Orders</h2>
+        <ul>
+            {{#each orders}}
+                <li>
+                    <a href="/order/{{this.id}}">Order: {{this.id}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<script src="{{editUserScript}}"></script>

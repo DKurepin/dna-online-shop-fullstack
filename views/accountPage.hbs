@@ -1,0 +1,32 @@
+<div class="main__gradient"></div>
+<div class="account_info">
+    <div class="account_info__user">
+        <h2>User Information</h2>
+        <p>User ID: {{id}}</p>
+        <p>Email: {{email}}</p>
+        <p>Username: {{username}}</p>
+        <p>Password: {{password}}</p>
+        <p>Phone Number: {{phoneNumber}}</p>
+        <p>Address: {{address}}</p>
+        <div class="formAccountUser">
+            <form action="edit/{{id}}" method="get">
+                <button type="submit" class="editButton">Edit</button>
+            </form>
+            <form action="/users/logout" method="post">
+                <button type="submit" class="editButton">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div class="account_info__orders">
+        <h2>Orders</h2>
+        <ul>
+            {{#each orders}}
+                <li>
+                    <a href="/order/{{this.id}}">Order: {{this.id}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+

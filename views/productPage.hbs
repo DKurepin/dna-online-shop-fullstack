@@ -1,0 +1,26 @@
+<div class="main__gradient"></div>
+<div class="main__product_container">
+    <div class="main__product_info">
+        <h1>Детали товара</h1>
+        <div id="productDetails">
+            <h3>{{ name }}</h3>
+            <img src="{{ photo }}" alt="{{ name }}">
+            <p>{{ description }}</p>
+            <p>Цена: {{ price }} RUB</p>
+            <p>На складе: {{ stock }}</p>
+        </div>
+    </div>
+
+    <div class="main__add_to_cart">
+        <h2>Для добавления в корзину</h2>
+        <form id="addToCartForm" action="aaa" method="post">
+            <label for="quantity">Количество товара:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" required class="input-field"><br>
+            <label for="productId">Product ID:</label>
+            <input type="text" id="productId" name="productId" value="{{ id }}" readonly class="input-field"><br>
+            <input type="submit" value="Добавить в корзину" class="submit-button">
+        </form>
+    </div>
+</div>
+<script src="{{productPageScript}}"></script>
+

@@ -1,0 +1,27 @@
+<div class="main__gradient"></div>
+<div class="order_info">
+    <div class="order_info__main">
+        <h2>Order Information</h2>
+        <p>User ID: {{userId}}</p>
+        <p>Order ID: {{id}}</p>
+        <p>Order Status: {{status}}</p>
+        <p>Order Total: {{total}} RUB</p>
+        <p>Order Address: {{address}}</p>
+        <p>Created Date: {{createdAt}}</p>
+        <p>Updated Date: {{updatedAt}}</p>
+        <input type="button" value="Back" class="backButton" onclick="window.location.href = '/users/page/{{userId}}'">
+    </div>
+    <div class="order_info__products">
+        <h3>Products</h3>
+        <ul>
+            {{#each products}}
+                <li>
+                    <a href="/product/{{this.productId}}">Page of product: {{this.productId}}</a>
+                    <p>Unit Price: {{this.unitPrice}} RUB</p>
+                    <p>Total Price: {{this.totalPrice}} RUB</p>
+                    <p>Quantity: {{this.quantity}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

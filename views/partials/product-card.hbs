@@ -1,0 +1,11 @@
+<div class="main__grid-list">
+    {{#each products}}
+        <div class="main__grid-list_item">
+            <a href="/product/{{id}}", id="productLink">
+                <img src="{{photo}}" alt="{{name}}">
+            </a>
+            <h3>{{name}}</h3>
+            <p>{{price}}</p>
+        </div>
+    {{/each}}
+</div>

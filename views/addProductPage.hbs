@@ -1,0 +1,44 @@
+<div class="main__gradient"></div>
+<div class="account_info">
+    <div class="account_info__user_edit">
+        <h2>User Information</h2>
+        <form class="addProductForm">
+            <!--            <p>User ID: {{id}}</p>-->
+<!--            {-->
+<!--            "name": "string",-->
+<!--            "description": "string",-->
+<!--            "price": 0,-->
+<!--            "stock": 0,-->
+<!--            "categoryId": 0,-->
+<!--            "photo": "string"-->
+<!--            }-->
+            <p> Add new product</p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="{{name}}" required><br>
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description" value="{{description}}" required><br>
+            <label for="price">Price:</label><br>
+            <input type="number" id="price" name="price" value="{{price}}" required><br>
+            <label for="stock">Stock:</label><br>
+            <input type="number" id="stock" name="stock" value="{{stock}}" required><br>
+            <label for="categoryId">Category ID:</label><br>
+            <input type="number" id="categoryId" name="categoryId" value="{{categoryId}}" required
+                     placeholder="1 - All, 2 - Top, 3 - Jewelry, 4 - Accessories, 5 - Pants"><br>
+            <label for="photo">Photo:</label><br>
+            <input type="text" id="photo" name="photo" value="{{photo}}" required><br><br>
+            <input type="submit" value="Add Product" class="saveButton">
+            <input type="button" value="Cancel" class="cancelButton" onclick="window.location.href = '../../{{id}}'">
+        </form>
+    </div>
+<!--    <div class="account_info__orders">-->
+<!--        <h2>Orders</h2>-->
+<!--        <ul>-->
+<!--            {{#each orders}}-->
+<!--                <li>-->
+<!--                    <a href="/order/{{this.id}}">Order: {{this.id}}</a>-->
+<!--                </li>-->
+<!--            {{/each}}-->
+<!--        </ul>-->
+<!--    </div>-->
+</div>
+<script src="{{addProductScript}}"></script>
