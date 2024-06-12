@@ -2,6 +2,8 @@
 ### Сайт концепт-магазина для покупки одежды/аксессуаров
 ### Курепин Даниил Денисович M33031
 <img width="1438" alt="image" src="https://github.com/DKurepin/dna-online-shop-fullstack/assets/91544570/dec01f0b-16f3-4a66-826a-54af84abf0c3">
+
+
 ![shop_vid-ezgif com-video-to-gif-converter](https://github.com/DKurepin/dna-online-shop-fullstack/assets/91544570/4b75aa33-308b-467a-8ba7-c0a5226df004)
 
 
